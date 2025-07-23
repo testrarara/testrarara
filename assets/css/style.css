@@ -1,0 +1,910 @@
+/* Radish Project - Pastoral Green Cartoon Styling */
+
+/* Import Google Fonts for cartoon-style typography */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Nunito:wght@400;600;700;800&display=swap');
+
+/* CSS Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Green-Focused Pastoral Color Palette */
+    --fresh-green: #4CAF50;
+    --forest-green: #2E7D32;
+    --light-green: #81C784;
+    --sage-green: #8BC34A;
+    --cream-white: #FFF8E1;
+    --earth-brown: #8D6E63;
+    --sky-blue: #81D4FA;
+    --warm-orange: #FFB74D;
+    --coral: #FF7043;
+    --soft-gray: #F5F5F5;
+    --dark-gray: #333333;
+    --light-shadow: rgba(0, 0, 0, 0.1);
+    --medium-shadow: rgba(0, 0, 0, 0.15);
+    
+    /* Cartoon Fonts */
+    --cartoon-font: 'Fredoka One', cursive;
+    --body-font: 'Nunito', sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    font-weight: 600;
+    line-height: 1.6;
+    color: var(--dark-gray);
+    background: linear-gradient(135deg, var(--cream-white) 0%, var(--light-green) 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--cartoon-font);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: var(--fresh-green);
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px var(--light-shadow);
+}
+
+h2 {
+    font-size: 2.8rem;
+    color: var(--forest-green);
+    margin-bottom: 0.8rem;
+    text-shadow: 2px 2px 4px var(--light-shadow);
+}
+
+h3 {
+    font-size: 2.2rem;
+    color: var(--sage-green);
+    margin-bottom: 0.6rem;
+    text-shadow: 1px 1px 3px var(--light-shadow);
+}
+
+p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--dark-gray);
+}
+
+.lead {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--forest-green);
+}
+
+/* Navigation */
+.navbar {
+    background: var(--cream-white) !important;
+    border-bottom: 3px solid var(--fresh-green);
+    box-shadow: 0 4px 12px var(--light-shadow);
+    padding: 1rem 0;
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    font-family: var(--cartoon-font);
+    font-size: 2.2rem;
+    color: var(--fresh-green) !important;
+    text-shadow: 2px 2px 4px var(--light-shadow);
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-link {
+    font-family: var(--body-font);
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--dark-gray) !important;
+    text-transform: uppercase;
+    margin: 0 0.3rem;
+    padding: 0.8rem 1.2rem !important;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+    background: var(--sage-green);
+    color: var(--cream-white) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--medium-shadow);
+}
+
+.navbar-nav .nav-link.active {
+    background: var(--fresh-green);
+    color: var(--cream-white) !important;
+    box-shadow: 0 4px 12px var(--medium-shadow);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, var(--sage-green) 0%, var(--fresh-green) 100%);
+    border-radius: 20px;
+    margin: 2rem;
+    padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 32px var(--medium-shadow);
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.hero-content h1 {
+    color: var(--cream-white);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+    color: var(--cream-white);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Homepage Banner */
+.homepage-banner {
+    max-width: 700px !important;
+    width: auto;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+/* Large screens - make banner even bigger */
+@media (min-width: 1200px) {
+    .homepage-banner {
+        max-width: 800px !important;
+    }
+}
+
+/* Extra large screens */
+@media (min-width: 1400px) {
+    .homepage-banner {
+        max-width: 900px !important;
+    }
+}
+
+/* Beautiful Cards */
+.art-card {
+    background: var(--cream-white);
+    border: none;
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 1.5rem 0;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    box-shadow: 0 6px 20px var(--light-shadow);
+}
+
+.art-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px var(--medium-shadow);
+}
+
+.art-card:nth-child(even) {
+    background: linear-gradient(135deg, var(--light-green) 0%, rgba(129, 199, 132, 0.1) 100%);
+}
+
+.art-card:nth-child(3n) {
+    background: linear-gradient(135deg, var(--sage-green) 0%, rgba(139, 195, 74, 0.1) 100%);
+}
+
+/* Buttons */
+.btn-art {
+    font-family: var(--cartoon-font);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    background: var(--fresh-green);
+    color: var(--cream-white);
+    border: none;
+    border-radius: 50px;
+    padding: 1rem 2.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.btn-art:hover {
+    background: var(--forest-green);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(46, 125, 50, 0.5);
+    color: var(--cream-white);
+}
+
+.btn-secondary {
+    background: var(--sky-blue);
+    box-shadow: 0 6px 20px rgba(129, 212, 250, 0.4);
+}
+
+.btn-secondary:hover {
+    background: var(--sage-green);
+    box-shadow: 0 8px 25px rgba(139, 195, 74, 0.5);
+}
+
+.btn-success {
+    background: var(--sage-green);
+    box-shadow: 0 6px 20px rgba(139, 195, 74, 0.4);
+}
+
+/* Image Styling */
+.art-image {
+    border-radius: 15px;
+    box-shadow: 0 6px 20px var(--light-shadow);
+    transition: all 0.3s ease;
+    max-width: 100%;
+    height: auto;
+}
+
+.art-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px var(--medium-shadow);
+}
+
+/* Background Variations */
+.bg-green {
+    background: linear-gradient(135deg, var(--fresh-green) 0%, rgba(76, 175, 80, 0.8) 100%);
+    color: var(--cream-white);
+    border-radius: 20px;
+    padding: 3rem 1rem;
+    margin: 2rem 0;
+}
+
+.bg-light-green {
+    background: linear-gradient(135deg, var(--light-green) 0%, rgba(129, 199, 132, 0.8) 100%);
+    color: var(--cream-white);
+    border-radius: 20px;
+    padding: 3rem 1rem;
+    margin: 2rem 0;
+}
+
+.bg-sage {
+    background: linear-gradient(135deg, var(--sage-green) 0%, rgba(139, 195, 74, 0.8) 100%);
+    color: var(--cream-white);
+    border-radius: 20px;
+    padding: 2rem 1rem;
+}
+
+.bg-earth {
+    background: linear-gradient(135deg, var(--earth-brown) 0%, rgba(141, 110, 99, 0.8) 100%);
+    color: var(--cream-white);
+    border-radius: 20px;
+    padding: 2rem 1rem;
+}
+
+.bg-sky {
+    background: linear-gradient(135deg, var(--sky-blue) 0%, rgba(129, 212, 250, 0.9) 100%);
+    color: var(--cream-white);
+    border-radius: 20px;
+    padding: 3rem 1rem;
+    margin: 2rem 0;
+}
+
+/* Container Modifications */
+.container-art {
+    background: var(--cream-white);
+    border-radius: 25px;
+    margin: 2rem auto;
+    padding: 3rem;
+    box-shadow: 0 8px 32px var(--light-shadow);
+    position: relative;
+}
+
+/* Footer - Radish Garden */
+.footer-garden {
+    background: linear-gradient(180deg, var(--forest-green) 0%, #1B5E20 50%, #0D4012 100%);
+    color: var(--cream-white);
+    border-radius: 0;
+    padding: 3rem 0 2rem 0;
+    margin-top: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-garden::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: repeating-linear-gradient(
+        0deg,
+        #1B5E20 0px,
+        #1B5E20 3px,
+        #0D4012 3px,
+        #0D4012 6px
+    );
+    opacity: 0.6;
+}
+
+.footer-garden::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: 
+        radial-gradient(ellipse 35px 50px at 8% 100%, #FF6B35 0%, transparent 60%),
+        radial-gradient(ellipse 32px 48px at 18% 100%, #FF8C42 0%, transparent 60%),
+        radial-gradient(ellipse 38px 52px at 28% 100%, #FF6B35 0%, transparent 60%),
+        radial-gradient(ellipse 30px 45px at 38% 100%, #FF8C42 0%, transparent 60%),
+        radial-gradient(ellipse 36px 51px at 48% 100%, #FF6B35 0%, transparent 60%),
+        radial-gradient(ellipse 33px 47px at 58% 100%, #FF8C42 0%, transparent 60%),
+        radial-gradient(ellipse 37px 53px at 68% 100%, #FF6B35 0%, transparent 60%),
+        radial-gradient(ellipse 31px 46px at 78% 100%, #FF8C42 0%, transparent 60%),
+        radial-gradient(ellipse 35px 49px at 88% 100%, #FF6B35 0%, transparent 60%),
+        radial-gradient(ellipse 29px 44px at 95% 100%, #FF8C42 0%, transparent 60%);
+}
+
+.footer-garden .container {
+    position: relative;
+    z-index: 3;
+}
+
+.footer-garden h3 {
+    color: var(--cream-white);
+    margin-bottom: 1.2rem;
+    font-size: 1.6rem;
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.footer-garden h3::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: var(--cream-white);
+    border-radius: 2px;
+    opacity: 0.8;
+}
+
+/* Footer card decorations */
+.footer-garden .art-card::before {
+    content: '🥕';
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    font-size: 2rem;
+    animation: radishGrow 3s ease-in-out infinite;
+}
+
+.footer-garden .col-md-4:nth-child(2) .art-card::before {
+    content: '🌱';
+    animation-delay: 0.5s;
+}
+
+.footer-garden .col-md-4:nth-child(3) .art-card::before {
+    content: '🥕';
+    animation-delay: 1s;
+}
+
+.footer-garden a {
+    color: var(--cream-white);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    position: relative;
+}
+
+.footer-garden a:hover {
+    color: var(--warm-orange);
+    transform: translateX(5px);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.footer-garden .footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-garden .footer-links li {
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+.footer-garden .footer-links li::before {
+    content: '🌿';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 0.9rem;
+}
+
+.footer-garden .footer-social {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-garden .footer-social .btn-art {
+    font-size: 0.9rem;
+    padding: 0.8rem 1.5rem;
+    margin: 0.2rem;
+    background: rgba(255, 248, 225, 0.2);
+    border: 2px solid var(--forest-green);
+    color: var(--forest-green);
+}
+
+.footer-garden .footer-social .btn-art:hover {
+    background: var(--forest-green);
+    color: var(--cream-white);
+    transform: translateY(-3px);
+}
+
+/* Footer bottom styles removed as we use art-card structure now */
+
+.footer-emoji {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    display: inline-block;
+    animation: bounce 2s infinite;
+}
+
+.footer-emoji:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.footer-emoji:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes radishGrow {
+    0%, 100% { transform: translateY(0px) scale(1); }
+    50% { transform: translateY(-5px) scale(1.1); }
+}
+
+/* Loading Screen - Radish Garden */
+.loading-garden {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, var(--sky-blue) 0%, var(--light-green) 40%, var(--fresh-green) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.garden-scene {
+    width: 400px;
+    height: 200px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.garden-ground {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: var(--forest-green);
+    border-radius: 20px 20px 0 0;
+}
+
+.garden-radish {
+    position: absolute;
+    bottom: 30px;
+    width: 30px;
+    height: 40px;
+    animation: radishSway 2s ease-in-out infinite;
+}
+
+.garden-radish::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 25px;
+    background: var(--coral);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.garden-radish::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 20px;
+    background: var(--fresh-green);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.garden-radish:nth-child(2) {
+    left: 50px;
+    animation-delay: 0.3s;
+}
+
+.garden-radish:nth-child(3) {
+    left: 120px;
+    animation-delay: 0.6s;
+}
+
+.garden-radish:nth-child(4) {
+    left: 190px;
+    animation-delay: 0.9s;
+}
+
+.garden-radish:nth-child(5) {
+    left: 260px;
+    animation-delay: 1.2s;
+}
+
+.garden-radish:nth-child(6) {
+    left: 330px;
+    animation-delay: 1.5s;
+}
+
+.garden-donkey {
+    position: absolute;
+    right: 40px;
+    bottom: 45px;
+    width: 40px;
+    height: 25px;
+    background: var(--earth-brown);
+    border-radius: 15px;
+    animation: donkeyHop 1.5s ease-in-out infinite;
+}
+
+.garden-donkey::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: -5px;
+    width: 12px;
+    height: 12px;
+    background: var(--earth-brown);
+    border-radius: 50%;
+}
+
+.garden-donkey::after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    right: 8px;
+    width: 4px;
+    height: 4px;
+    background: var(--dark-gray);
+    border-radius: 50%;
+}
+
+@keyframes radishSway {
+    0%, 100% { transform: rotate(-2deg); }
+    50% { transform: rotate(2deg); }
+}
+
+@keyframes donkeyHop {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+}
+
+/* Enhanced Event Cards */
+.event-card {
+    background: linear-gradient(135deg, var(--cream-white) 0%, var(--light-green) 100%);
+    border: 3px solid var(--fresh-green);
+    border-radius: 25px;
+    padding: 2.5rem;
+    margin: 2rem 0;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 25px var(--light-shadow);
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px var(--medium-shadow);
+    border-color: var(--sage-green);
+}
+
+.event-card h3 {
+    color: var(--forest-green);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.event-item {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    padding: 1.2rem;
+    margin: 1rem 0;
+    border-left: 5px solid var(--fresh-green);
+    transition: all 0.3s ease;
+}
+
+.event-item:hover {
+    background: rgba(255, 255, 255, 0.9);
+    transform: translateX(10px);
+    border-left-color: var(--sage-green);
+}
+
+.event-item strong {
+    color: var(--forest-green);
+    font-size: 1.1rem;
+}
+
+/* Enhanced Community Cards */
+.community-card {
+    background: linear-gradient(135deg, var(--cream-white) 0%, rgba(129, 199, 132, 0.1) 100%);
+    border: 2px solid var(--sage-green);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 1rem 0;
+    transition: all 0.4s ease;
+    box-shadow: 0 6px 20px var(--light-shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+.community-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px var(--medium-shadow);
+    border-color: var(--fresh-green);
+}
+
+.community-card h3 {
+    color: var(--fresh-green);
+    position: relative;
+    z-index: 2;
+}
+
+.community-card p {
+    position: relative;
+    z-index: 2;
+}
+
+.community-card .btn-art {
+    position: relative;
+    z-index: 2;
+}
+
+/* Animations */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-15px);
+    }
+    60% {
+        transform: translateY(-8px);
+    }
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.floating {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .hero-section {
+        margin: 0.5rem;
+        padding: 2rem 1rem;
+        border-radius: 15px;
+    }
+    
+    .navbar-brand {
+        font-size: 1.8rem;
+    }
+    
+    .btn-art {
+        font-size: 1rem;
+        padding: 0.8rem 2rem;
+    }
+    
+    .container-art {
+        margin: 0.5rem auto;
+        padding: 2rem 1rem;
+        border-radius: 15px;
+    }
+    
+    /* 确保图片在移动端不会溢出 */
+    .art-image {
+        max-width: 100% !important;
+        height: auto !important;
+        width: 100% !important;
+    }
+    
+    /* 移动端图片容器 */
+    .text-center img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    
+    /* 强制覆盖所有内联样式的图片 */
+    img[style*="max-width"] {
+        max-width: 100% !important;
+        width: 100% !important;
+        height: auto !important;
+    }
+    
+    /* 移动端所有图片响应式 */
+    .container-art img,
+    .hero-section img,
+    .art-card img {
+        max-width: 100% !important;
+        height: auto !important;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    /* 移动端首页banner */
+    .homepage-banner {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+    
+    /* 移动端hero内容调整 */
+    .hero-content h1 {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    /* 移动端按钮组调整 */
+    .hero-content .btn-art {
+        display: block;
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+    
+    /* 移动端footer调整 */
+    .footer-garden {
+        padding: 2rem 0 1.5rem 0;
+    }
+    
+    .footer-garden .container {
+        padding: 0 0.5rem;
+    }
+    
+    /* 移动端卡片调整 */
+    .art-card {
+        margin: 1rem 0;
+        padding: 1.5rem;
+    }
+    
+    /* 移动端行间距调整 */
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .col-md-4, .col-md-6, .col-lg-6 {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
+
+/* 超小屏幕优化 (小于576px) */
+@media (max-width: 576px) {
+    .hero-section {
+        margin: 0.25rem;
+        padding: 1.5rem 0.75rem;
+        border-radius: 10px;
+    }
+    
+    .container-art {
+        margin: 0.25rem auto;
+        padding: 1.5rem 0.75rem;
+        border-radius: 10px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .btn-art {
+        font-size: 0.9rem;
+        padding: 0.7rem 1.5rem;
+    }
+    
+    .art-card {
+        padding: 1rem;
+        margin: 0.5rem 0;
+    }
+    
+    .footer-garden {
+        padding: 1.5rem 0 1rem 0;
+    }
+    
+    /* 超小屏幕图片适配 */
+    .art-image {
+        max-width: 100% !important;
+        height: auto !important;
+        width: 100% !important;
+    }
+    
+    .text-center img {
+        max-width: 100% !important;
+        height: auto !important;
+        margin: 0 auto !important;
+    }
+    
+    /* 超小屏幕强制覆盖内联样式 */
+    img[style*="max-width"] {
+        max-width: 100% !important;
+        width: 100% !important;
+        height: auto !important;
+    }
+    
+    /* 超小屏幕首页banner */
+    .homepage-banner {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+} 
