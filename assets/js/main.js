@@ -22,11 +22,11 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
             <div style="font-family: 'Fredoka One', cursive; font-size: 2.5rem; color: #2E7D32;
                        text-shadow: 2px 2px 4px rgba(0,0,0,0.1); animation: bounce 1s infinite;">
-                RADISH LOADING...
+                CARROT LOADING...
             </div>
             <div style="font-family: 'Nunito', sans-serif; font-size: 1.2rem; color: #4CAF50; 
                        margin-top: 1rem; text-align: center;">
-                Welcome to the radish garden! 🥕🌱
+                Welcome to the carrot garden! 🥕🌱
             </div>
         `;
         document.body.appendChild(loader);
