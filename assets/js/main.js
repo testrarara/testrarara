@@ -13,12 +13,12 @@ document.addEventListener('DOMContentLoaded', function() {
         loader.innerHTML = `
             <div class="garden-scene">
                 <div class="garden-ground"></div>
-                <div class="garden-radish"></div>
-                <div class="garden-radish"></div>
-                <div class="garden-radish"></div>
-                <div class="garden-radish"></div>
-                <div class="garden-radish"></div>
-                <div class="garden-radish"></div>
+                <img src="assets/images/radish_logo.webp" alt="CARROT Logo" class="garden-logo" style="animation-delay: 0s;">
+                <img src="assets/images/radish_logo.webp" alt="CARROT Logo" class="garden-logo" style="animation-delay: 0.3s;">
+                <img src="assets/images/radish_logo.webp" alt="CARROT Logo" class="garden-logo" style="animation-delay: 0.6s;">
+                <img src="assets/images/radish_logo.webp" alt="CARROT Logo" class="garden-logo" style="animation-delay: 0.9s;">
+                <img src="assets/images/radish_logo.webp" alt="CARROT Logo" class="garden-logo" style="animation-delay: 1.2s;">
+                <img src="assets/images/radish_logo.webp" alt="CARROT Logo" class="garden-logo" style="animation-delay: 1.5s;">
             </div>
             <div style="font-family: 'Fredoka One', cursive; font-size: 2.5rem; color: #2E7D32;
                        text-shadow: 2px 2px 4px rgba(0,0,0,0.1); animation: bounce 1s infinite;">
