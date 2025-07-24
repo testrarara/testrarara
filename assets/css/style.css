@@ -66,9 +66,16 @@ h2 {
 
 h3 {
     font-size: 2.2rem;
-    color: var(--sage-green);
+    color: var(--forest-green);
     margin-bottom: 0.6rem;
     text-shadow: 1px 1px 3px var(--light-shadow);
+}
+
+h4 {
+    font-size: 1.8rem;
+    color: var(--forest-green);
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 2px var(--light-shadow);
 }
 
 p {
@@ -754,7 +761,7 @@ p {
 }
 
 .community-card h3 {
-    color: var(--fresh-green);
+    color: var(--forest-green);
     position: relative;
     z-index: 2;
 }
